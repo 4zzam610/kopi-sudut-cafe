@@ -1,149 +1,1503 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kopi Sudut Café</title>
-<meta name="description" content="Kopi Sudut Café & Roastery di Jakarta. Kopi single origin nusantara, camilan, dan ruang tenang untuk bekerja atau berbincang.">
-<meta name="theme-color" content="#faf7f2">
-<noscript><style>#ld{display:none!important}body.lock{overflow:auto!important}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
-#ok{color:var(--acc);font-size:14px;margin-top:14px;min-height:1.5em}
-@media(max-width:600px){section{padding:80px 0}nav div{gap:16px}}
-</style></noscript>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a5a34' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='M4 8h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 9h1.5a2.5 2.5 0 0 1 0 5H17'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#faf7f2;--fg:#1c1612;--mut:#7a6f66;--line:#e4ddd3;--acc:#8a5a34;--card:#f2ede5;color-scheme:light dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15100c;--fg:#f1e9df;--mut:#a39587;--line:#2e251d;--acc:#d9a46b;--card:#1d1611}}
-:root[data-theme="dark"]{--bg:#15100c;--fg:#f1e9df;--mut:#a39587;--line:#2e251d;--acc:#d9a46b;--card:#1d1611}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth;scroll-padding-top:64px}
-body{background:var(--bg);color:var(--fg);font:300 16px/1.75 Inter,system-ui,sans-serif}
-h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.1}
-nav{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:16px 6vw;background:var(--bg);border-bottom:1px solid var(--line)}
-nav b{font:400 20px "DM Serif Display",serif}
-nav div{display:flex;gap:22px;overflow-x:auto}
-nav a{color:var(--mut);text-decoration:none;font-size:13px;white-space:nowrap}
-nav a:hover{color:var(--fg)}
-.w{max-width:1040px;margin:0 auto;padding:0 6vw}
-section{padding:110px 0;border-top:1px solid var(--line)}
-.lb{font-size:12px;letter-spacing:.2em;color:var(--acc);text-transform:uppercase;margin-bottom:20px;display:block}
-h2{font-size:clamp(32px,5vw,52px);margin-bottom:22px;max-width:620px}
-p.l{color:var(--mut);max-width:560px}
-.hero{min-height:100vh;display:flex;align-items:center;border:0;padding-top:100px}
-h1{font-size:clamp(56px,13vw,150px);letter-spacing:-.02em}
-.hero p{margin:26px 0 34px;color:var(--mut);max-width:420px}
-.btn{display:inline-block;padding:13px 30px;border:1px solid var(--fg);color:var(--fg);background:none;text-decoration:none;font:400 14px Inter;cursor:pointer;transition:.2s}
-.btn:hover,.btn.f{background:var(--fg);color:var(--bg)}
-.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;margin-top:50px}
-.cols h3{font-size:22px;margin-bottom:8px}.cols p{color:var(--mut);font-size:15px}
-.num{font:400 40px "DM Serif Display",serif;color:var(--acc)}
-.tabs{display:flex;gap:22px;margin:34px 0 10px;border-bottom:1px solid var(--line)}
-.tabs button{background:none;border:0;border-bottom:1px solid transparent;margin-bottom:-1px;padding:0 0 12px;color:var(--mut);font:400 14px Inter;cursor:pointer}
-.tabs button.on{color:var(--fg);border-color:var(--fg)}
-.row{display:flex;justify-content:space-between;gap:20px;padding:18px 0;border-bottom:1px solid var(--line)}
-.row h3{font-size:20px}.row p{color:var(--mut);font-size:14px}.row b{font-weight:400;white-space:nowrap}
-.ph{aspect-ratio:4/5;background:var(--card);border:1px solid var(--line);display:flex;align-items:flex-end;padding:14px;font-size:12px;color:var(--mut)}
-.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:44px}
-.ev{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}
-.ev .num{line-height:1}.ev small{display:block;color:var(--mut);font-size:12px}
-q{display:block;font:400 24px/1.4 "DM Serif Display",serif;quotes:none}
-.q span{display:block;margin-top:14px;font-size:13px;color:var(--mut)}
-.faq details{border-bottom:1px solid var(--line);padding:18px 0}
-.faq summary{cursor:pointer;font:400 20px "DM Serif Display",serif;list-style:none}
-.faq p{color:var(--mut);margin-top:10px;font-size:15px}
-.f1{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:30px}
-input,select{padding:13px 0;border:0;border-bottom:1px solid var(--line);background:none;color:var(--fg);font:300 15px Inter;width:100%;outline:0}
-input:focus{border-color:var(--fg)}
-footer{padding:40px 0;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
-footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-.ov{position:fixed;inset:0;z-index:20;background:rgba(
-0,0,0,.45);display:none;align-items:center;justify-content:center;padding:20px}
-.ov.open{display:flex}
-.pop{position:relative;max-width:380px;width:100%;background:var(--bg);border:1px solid var(--line);padding:42px 32px;text-align:center}
-.pop h2{font-size:36px;margin:0 auto 12px}.pop p{color:var(--mut);font-size:14px;margin-bottom:24px}
-.pop .x{position:absolute;top:10px;right:16px;background:none;border:0;color:var(--mut);font-size:24px;cursor:pointer}
-.i{width:1.1em;height:1.1em;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.2em;color:var(--acc)}
-nav b{display:flex;align-items:center}
-.ct{display:flex;align-items:center;color:var(--mut);margin:6px 0}
-.ic{width:28px;height:28px;stroke:var(--acc);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;display:block;margin-bottom:14px;flex:none}
-.ic.n{display:inline-block;width:22px;height:22px;margin:0 8px 0 0;vertical-align:-4px}
-.ic.s{display:inline-block;width:18px;height:18px;margin:0 10px 0 0;vertical-align:-3px}
-.ic.m{margin:2px 0 0;width:26px;height:26px}
-.ev{grid-template-columns:40px 1fr}
-#ld{position:fixed;inset:0;z-index:50;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
-#ld .lg{width:84px;height:84px;fill:none;stroke:var(--fg);stroke-width:1;stroke-linecap:round;stroke-linejoin:round}
-#ld .dr{stroke-dasharray:1;stroke-dashoffset:1}
-#ld b{font:400 22px "DM Serif Display",serif}#ld span{font-size:12px;letter-spacing:.2em;color:var(--mut)}
-.pop .ring{width:64px;height:64px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
-.pop .ring .ic{margin:0}
-.ct{display:flex;align-items:center;color:var(--mut);margin:6px 0}
-body.lock{overflow:hidden}
-</style>
-</head>
-<body class="lock">
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="cup" viewBox="0 0 24 24"><path d="M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10h2a2.5 2.5 0 0 1 0 5h-2M8 3v2M12 3v2"/></symbol><symbol id="bean" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9" transform="rotate(35 12 12)"/><path d="M8 17c4-2 4-8 8-10"/></symbol><symbol id="flame" viewBox="0 0 24 24"><path d="M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9z"/></symbol><symbol id="leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14zM5 19l7-7"/></symbol><symbol id="wifi" viewBox="0 0 24 24"><path d="M3 9a14 14 0 0 1 18 0M6 12.5a9 9 0 0 1 12 0M9 16a4.5 4.5 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/></symbol><symbol id="music" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></symbol><symbol id="drip" viewBox="0 0 24 24"><path d="M5 4h14l-4 9H9zM9 13v3h6v-3M8 20h8"/></symbol><symbol id="book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5M8 7h7"/></symbol><symbol id="cookie" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r=".8"/><circle cx="15" cy="10" r=".8"/><circle cx="10" cy="15" r=".8"/><circle cx="15" cy="15" r=".8"/></symbol><symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol><symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="gift" viewBox="0 0 24 24"><path d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7c-3 0-5-1-4-3s4 0 4 3c0-3 3-5 4-3s-1 3-4 3"/></symbol></defs></svg>
-<div id="ld" aria-label="Memuat"><svg class="lg" viewBox="0 0 24 24"><path class="dr" pathLength="1" d="M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10h2a2.5 2.5 0 0 1 0 5h-2"/><path class="dr" pathLength="1" d="M8 3v2M12 3v2"/></svg><b>Kopi Sudut</b><span id="pc">0</span></div>
-<nav><b><svg class="ic n"><use href="#cup"/></svg>Kopi Sudut</b><div><a href="#tentang">Tentang</a><a href="#nilai">Nilai</a><a href="#menu">Menu</a><a href="#biji">Biji</a><a href="#suasana">Suasana</a><a href="#acara">Acara</a><a href="#ulasan">Ulasan</a><a href="#faq">FAQ</a><a href="#kontak">Kontak</a></div></nav>
-<header class="hero"><div class="w"><span class="lb">Café &amp; Roastery · Jakarta</span><h1>Kopi<br>Sudut</h1><p>Seduh pelan, nikmati lama. Tempat tenang di pojok kota.</p><a class="btn f" href="#menu">Lihat menu</a></div></header>
-<section id="tentang"><div class="w"><span class="lb">01 — Tentang</span><h2>Berawal dari satu meja kecil di pojok jalan.</h2><p class="l">Kini kami menyajikan kopi single origin nusantara, kue buatan sendiri, dan ruang untuk bekerja, berbincang, atau sekadar diam.</p>
-<div class="cols"><div><div class="num">12+</div><p>Jenis biji kopi</p></div><div><div class="num">5K+</div><p>Cangkir setiap bulan</p></div><div><div class="num">2019</div><p>Mulai menyeduh</p></div></div></div></section>
-<section id="nilai"><div class="w"><span class="lb">02 — Nilai Kami</span><h2>Sederhana, tapi dikerjakan sungguh-sungguh.</h2><div class="cols">
-<div><svg class="ic"><use href="#bean"/></svg><h3>Biji pilihan</h3><p>Langsung dari petani lokal dengan harga yang adil.</p></div>
-<div><svg class="ic"><use href="#flame"/></svg><h3>Sangrai sendiri</h3><p>Disangrai kecil-kecilan setiap minggu agar tetap segar.</p></div>
-<div><svg class="ic"><use href="#wifi"/></svg><h3>Ruang tenang</h3><p>Musik lembut, Wi-Fi cepat, colokan di setiap meja.</p></div></div></div></section>
-<section id="menu"><div class="w"><span class="lb">03 — Menu</span><h2>Pilihan harian kami.</h2><div class="tabs" id="tabs"><button class="on" data-c="kopi">Kopi</button><button data-c="non">Non-kopi</button><button data-c="snack">Camilan</button></div><div id="list"></div></div></section>
-<section id="biji"><div class="w"><span class="lb">04 — Asal Biji</span><h2>Empat daerah, empat karakter.</h2><div class="cols">
-<div><h3>Gayo</h3><p>Aceh · Floral, manis lembut, body ringan.</p></div><div><h3>Toraja</h3><p>Sulawesi · Earthy, cokelat, rempah.</p></div><div><h3>Flores Bajawa</h3><p>NTT · Karamel, kacang, seimbang.</p></div><div><h3>Kintamani</h3><p>Bali · Citrus, segar, asam cerah.</p></div></div></div></section>
-<section id="suasana"><div class="w"><span class="lb">05 — Suasana</span><h2>Ruang untuk berhenti sejenak.</h2><div class="gal"><div class="ph">Bar kopi</div><div class="ph">Sudut baca</div><div class="ph">Teras</div><div class="ph">Roastery</div></div></div></section>
-<section id="acara"><div class="w"><span class="lb">06 — Acara</span><h2>Setiap pekan ada yang baru.</h2>
-<div class="ev"><svg class="ic m"><use href="#music"/></svg><div><h3>Live Akustik</h3><small>Jumat · 19.00 – 21.30</small></div></div>
-<div class="ev"><svg class="ic m"><use href="#drip"/></svg><div><h3>Kelas Seduh Manual</h3><small>Sabtu · 10.00 – 12.00</small></div></div>
-<div class="ev"><svg class="ic m"><use href="#book"/></svg><div><h3>Komunitas Buku</h3><small>Minggu · 15.00 – 17.00</small></div></div></div></section>
-<section id="ulasan"><div class="w q"><span class="lb">07 — Ulasan</span><q>Tempat favorit untuk menulis. Kopinya jujur, suasananya tenang.</q><span>Nadia, pelanggan tetap</span></div></section>
-<section id="faq"><div class="w faq"><span class="lb">08 — Tanya Jawab</span><h2>Pertanyaan umum.</h2>
-<details><summary>Apakah bisa reservasi?</summary><p>Bisa, untuk grup 4 orang atau lebih melalui formulir di bawah.</p></details>
-<details><summary>Apakah ada pilihan vegan?</summary><p>Ada susu oat dan almond untuk semua minuman.</p></details>
-<details><summary>Boleh bekerja lama di sini?</summary><p>Tentu. Wi-Fi gratis dan colokan tersedia.</p></details></div></section>
-<section id="kontak"><div class="w"><span class="lb">09 — Kontak</span><h2>Mampir, atau reservasi meja.</h2>
-<div class="l"><div class="ct"><svg class="ic s"><use href="#pin"/></svg>Jl. Contoh Raya No. 7, Jakarta</div><div class="ct"><svg class="ic s"><use href="#clock"/></svg>Setiap hari 08.00 – 23.00</div></div>
-<div class="f1"><input placeholder="Nama" aria-label="Nama"><input placeholder="Tanggal &amp; jam" aria-label="Tanggal"><select aria-label="Jumlah"><option>2 orang</option><option>4 orang</option><option>6+ orang</option></select></div>
-<p style="margin-top:30px"><button class="btn f" id="rsv" type="button">Kirim reservasi</button></p><p id="ok" role="status"></p></div></section>
-<footer><div class="w"><span>© 2026 Kopi Sudut Café</span><span>Instagram · WhatsApp</span></div></footer>
-<div class="ov" id="ov" role="dialog" aria-modal="true" aria-label="Promo"><div class="pop"><button class="x" id="x" aria-label="Tutup">×</button><div class="ring"><svg class="ic"><use href="#gift"/></svg></div><span class="lb">Promo hari ini</span><h2>Beli 1, gratis 1</h2><p>Semua kopi susu, Rabu–Jumat pukul 14.00–17.00.</p><button class="btn f" id="go">Ambil promo</button></div></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script>
-const M=[["Kopi Susu Sudut","Espresso, susu segar, gula aren",22,"kopi"],["V60 Gayo","Floral, bersih, manis lembut",28,"kopi"],["Americano Es","Segar dan tegas",20,"kopi"],["Matcha Latte","Matcha premium, susu oat",26,"non"],["Cokelat Panas","Pekat dengan krim lembut",24,"non"],["Croissant Butter","Hangat dari oven",25,"snack"],["Pisang Goreng Keju","Renyah, cokelat, keju",18,"snack"]];
-const I={kopi:"cup",non:"leaf",snack:"cookie"};
-const G=!!window.gsap,rm=matchMedia("(prefers-reduced-motion: reduce)").matches,A=G&&!rm;
-const L=document.getElementById("list");
-function draw(c){L.innerHTML=M.filter(m=>m[3]===c).map(m=>`<div class="row"><svg class="ic" style="margin:4px 0 0;flex:none"><use href="#${I[c]}"/></svg><div style="flex:1"><h3>${m[0]}</h3><p>${m[1]}</p></div><b>Rp ${m[2]}.000</b></div>`).join("");if(A)gsap.from("#list .row",{y:20,opacity:0,duration:.5,stagger:.07,ease:"power2.out"})}
-draw("kopi");
-document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;document.querySelectorAll("#tabs button").forEach(x=>x.classList.remove("on"));b.classList.add("on");draw(b.dataset.c)});
-const ov=document.getElementById("ov");
-const openPop=()=>{ov.classList.add("open");if(A)gsap.fromTo(".pop",{y:30,scale:.94,opacity:0},{y:0,scale:1,opacity:1,duration:.55,ease:"back.out(1.6)"})};
-const close=()=>{ov.classList.remove("open");try{sessionStorage.setItem("seen","1")}catch(e){}};
-let seen=false;try{seen=sessionStorage.getItem("seen")}catch(e){}
-document.getElementById("x").onclick=close;
-document.getElementById("go").onclick=()=>{close();location.hash="menu"};
-ov.addEventListener("click",e=>{if(e.target===ov)close()});
-document.addEventListener("keydown",e=>{if(e.key==="Escape")close()});
-document.getElementById("rsv").onclick=()=>{const f=document.querySelectorAll(".f1 input"),ok=document.getElementById("ok");if(!f[0].value.trim()||!f[1].value.trim()){ok.textContent="Mohon isi nama dan tanggal.";return}ok.textContent="Terima kasih, "+f[0].value.trim()+". Kami akan segera menghubungi Anda.";if(A)gsap.from(ok,{y:10,opacity:0,duration:.5})};
-const ld=document.getElementById("ld"),pc=document.getElementById("pc");
-function done(){ld.remove();document.body.classList.remove("lock");if(!seen)setTimeout(openPop,900)}
-if(!A){setTimeout(done,300)}else{
-gsap.registerPlugin(ScrollTrigger);
-const o={v:0};
-gsap.timeline()
-.to(o,{v:100,duration:1.9,ease:"power1.inOut",onUpdate:()=>pc.textContent=Math.round(o.v)},0)
-.to("#ld .dr",{strokeDashoffset:0,duration:1.6,stagger:.2,ease:"power2.inOut"},0)
-.to("#ld",{yPercent:-100,duration:.8,ease:"power4.inOut"},"+=.2")
-.from(".hero .lb,.hero h1,.hero p,.hero .btn",{y:60,opacity:0,duration:.9,stagger:.12,ease:"power3.out"},"-=.35")
-.add(done,"-=.2");
-gsap.utils.toArray("section").forEach(sc=>gsap.from(sc.querySelectorAll(".lb,h2,.l,.cols>div,.tabs,.ev,.ph,details,q,.f1,.btn"),{y:40,opacity:0,duration:.9,stagger:.1,ease:"power3.out",scrollTrigger:{trigger:sc,start:"top 78%"}}));
-}
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Kopi Sudut Café</title>
+    <meta
+      name="description"
+      content="Kopi Sudut Café & Roastery di Jakarta. Kopi single origin nusantara, camilan, dan ruang tenang untuk bekerja atau berbincang."
+    />
+    <meta name="theme-color" content="#faf7f2" />
+    <noscript
+      ><style>
+        #ld {
+          display: none !important;
+        }
+        body.lock {
+          overflow: auto !important;
+        }
+      </style></noscript
+    >
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a5a34' stroke-width='1.8' stroke-linecap='round'%3E%3Cpath d='M4 8h13v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM17 9h1.5a2.5 2.5 0 0 1 0 5H17'/%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #faf7f2;
+        --fg: #1c1612;
+        --mut: #7a6f66;
+        --line: #e4ddd3;
+        --acc: #8a5a34;
+        --card: #f2ede5;
+        color-scheme: light dark;
+        box-sizing: border-box;
+        padding-top: env(safe-area-inset-top, 0px);
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #15100c;
+          --fg: #f1e9df;
+          --mut: #a39587;
+          --line: #2e251d;
+          --acc: #d9a46b;
+          --card: #1d1611;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #15100c;
+        --fg: #f1e9df;
+        --mut: #a39587;
+        --line: #2e251d;
+        --acc: #d9a46b;
+        --card: #1d1611;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 64px;
+      }
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font:
+          300 16px/1.75 Inter,
+          system-ui,
+          sans-serif;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: "DM Serif Display", Georgia, serif;
+        font-weight: 400;
+        line-height: 1.1;
+      }
+      nav {
+        position: fixed;
+        top: env(safe-area-inset-top, 0px);
+        left: 0;
+        right: 0;
+        z-index: 5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 6vw;
+        background: var(--bg);
+        border-bottom: 1px solid var(--line);
+      }
+      nav b {
+        font:
+          400 20px "DM Serif Display",
+          serif;
+      }
+      nav div {
+        display: flex;
+        gap: 22px;
+        overflow-x: auto;
+      }
+      nav a {
+        color: var(--mut);
+        text-decoration: none;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+      nav a:hover {
+        color: var(--fg);
+      }
+      .w {
+        max-width: 1040px;
+        margin: 0 auto;
+        padding: 0 6vw;
+      }
+      section {
+        padding: 110px 0;
+        border-top: 1px solid var(--line);
+      }
+      .lb {
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        color: var(--acc);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        display: block;
+      }
+      h2 {
+        font-size: clamp(32px, 5vw, 52px);
+        margin-bottom: 22px;
+        max-width: 620px;
+      }
+      p.l {
+        color: var(--mut);
+        max-width: 560px;
+      }
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        border: 0;
+        padding-top: 100px;
+      }
+      h1 {
+        font-size: clamp(56px, 13vw, 150px);
+        letter-spacing: -0.02em;
+      }
+      .hero p {
+        margin: 26px 0 34px;
+        color: var(--mut);
+        max-width: 420px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 13px 30px;
+        border: 1px solid var(--fg);
+        color: var(--fg);
+        background: none;
+        text-decoration: none;
+        font: 400 14px Inter;
+        cursor: pointer;
+        transition: 0.2s;
+      }
+      .btn:hover,
+      .btn.f {
+        background: var(--fg);
+        color: var(--bg);
+      }
+      .cols {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 40px;
+        margin-top: 50px;
+      }
+      .cols h3 {
+        font-size: 22px;
+        margin-bottom: 8px;
+      }
+      .cols p {
+        color: var(--mut);
+        font-size: 15px;
+      }
+      .num {
+        font:
+          400 40px "DM Serif Display",
+          serif;
+        color: var(--acc);
+      }
+      .tabs {
+        display: flex;
+        gap: 22px;
+        margin: 34px 0 10px;
+        border-bottom: 1px solid var(--line);
+      }
+      .tabs button {
+        background: none;
+        border: 0;
+        border-bottom: 1px solid transparent;
+        margin-bottom: -1px;
+        padding: 0 0 12px;
+        color: var(--mut);
+        font: 400 14px Inter;
+        cursor: pointer;
+      }
+      .tabs button.on {
+        color: var(--fg);
+        border-color: var(--fg);
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 18px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .row h3 {
+        font-size: 20px;
+      }
+      .row p {
+        color: var(--mut);
+        font-size: 14px;
+      }
+      .row b {
+        font-weight: 400;
+        white-space: nowrap;
+      }
+      .ph {
+        aspect-ratio: 4/5;
+        background: var(--card);
+        border: 1px solid var(--line);
+        display: flex;
+        align-items: flex-end;
+        padding: 14px;
+        font-size: 12px;
+        color: var(--mut);
+      }
+      .gal {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 14px;
+        margin-top: 44px;
+      }
+      .ev {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+        gap: 20px;
+        padding: 20px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .ev .num {
+        line-height: 1;
+      }
+      .ev small {
+        display: block;
+        color: var(--mut);
+        font-size: 12px;
+      }
+      q {
+        display: block;
+        font:
+          400 24px/1.4 "DM Serif Display",
+          serif;
+        quotes: none;
+      }
+      .q span {
+        display: block;
+        margin-top: 14px;
+        font-size: 13px;
+        color: var(--mut);
+      }
+      .faq details {
+        border-bottom: 1px solid var(--line);
+        padding: 18px 0;
+      }
+      .faq summary {
+        cursor: pointer;
+        font:
+          400 20px "DM Serif Display",
+          serif;
+        list-style: none;
+      }
+      .faq p {
+        color: var(--mut);
+        margin-top: 10px;
+        font-size: 15px;
+      }
+      .f1 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-top: 30px;
+      }
+      input,
+      select {
+        padding: 13px 0;
+        border: 0;
+        border-bottom: 1px solid var(--line);
+        background: none;
+        color: var(--fg);
+        font: 300 15px Inter;
+        width: 100%;
+        outline: 0;
+      }
+      input:focus {
+        border-color: var(--fg);
+      }
+      footer {
+        padding: 40px 0;
+        border-top: 1px solid var(--line);
+        color: var(--mut);
+        font-size: 13px;
+      }
+      footer .w {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .ov {
+        position: fixed;
+        inset: 0;
+        z-index: 20;
+        background: rgba(0, 0, 0, 0.45);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+      .ov.open {
+        display: flex;
+      }
+      .pop {
+        position: relative;
+        max-width: 380px;
+        width: 100%;
+        background: var(--bg);
+        border: 1px solid var(--line);
+        padding: 42px 32px;
+        text-align: center;
+      }
+      .pop h2 {
+        font-size: 36px;
+        margin: 0 auto 12px;
+      }
+      .pop p {
+        color: var(--mut);
+        font-size: 14px;
+        margin-bottom: 24px;
+      }
+      .pop .x {
+        position: absolute;
+        top: 10px;
+        right: 16px;
+        background: none;
+        border: 0;
+        color: var(--mut);
+        font-size: 24px;
+        cursor: pointer;
+      }
+      .i {
+        width: 1.1em;
+        height: 1.1em;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 1.6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        vertical-align: -0.2em;
+        color: var(--acc);
+      }
+      nav b {
+        display: flex;
+        align-items: center;
+      }
+      .ct {
+        display: flex;
+        align-items: center;
+        color: var(--mut);
+        margin: 6px 0;
+      }
+      .ic {
+        width: 28px;
+        height: 28px;
+        stroke: var(--acc);
+        fill: none;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        display: block;
+        margin-bottom: 14px;
+        flex: none;
+      }
+      .ic.n {
+        display: inline-block;
+        width: 22px;
+        height: 22px;
+        margin: 0 8px 0 0;
+        vertical-align: -4px;
+      }
+      .ic.s {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin: 0 10px 0 0;
+        vertical-align: -3px;
+      }
+      .ic.m {
+        margin: 2px 0 0;
+        width: 26px;
+        height: 26px;
+      }
+      .ev {
+        grid-template-columns: 40px 1fr;
+      }
+      #ld {
+        position: fixed;
+        inset: 0;
+        z-index: 50;
+        background: var(--bg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+      #ld .lg {
+        width: 84px;
+        height: 84px;
+        fill: none;
+        stroke: var(--fg);
+        stroke-width: 1;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      #ld .dr {
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+      }
+      #ld b {
+        font:
+          400 22px "DM Serif Display",
+          serif;
+      }
+      #ld span {
+        font-size: 12px;
+        letter-spacing: 0.2em;
+        color: var(--mut);
+      }
+      .pop .ring {
+        width: 64px;
+        height: 64px;
+        border: 1px solid var(--line);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 18px;
+      }
+      .pop .ring .ic {
+        margin: 0;
+      }
+      .ct {
+        display: flex;
+        align-items: center;
+        color: var(--mut);
+        margin: 6px 0;
+      }
+      body.lock {
+        overflow: hidden;
+      }
+      a:focus-visible,
+      button:focus-visible,
+      input:focus-visible,
+      select:focus-visible,
+      summary:focus-visible {
+        outline: 2px solid var(--acc);
+        outline-offset: 3px;
+      }
+      #ok {
+        color: var(--acc);
+        font-size: 14px;
+        margin-top: 14px;
+        min-height: 1.5em;
+      }
+      @media (max-width: 600px) {
+        section {
+          padding: 80px 0;
+        }
+        nav div {
+          gap: 16px;
+        }
+      }
+      .ph {
+        background-size: cover;
+        background-position: center;
+      }
+      .ph.has {
+        color: #fff;
+        text-shadow: 0 1px 8px #000b;
+      }
+      .a1 {
+        fill: var(--acc);
+      }
+      .a2 {
+        fill: var(--fg);
+        opacity: 0.85;
+      }
+      .a3 {
+        fill: var(--line);
+      }
+      .a4 {
+        fill: var(--mut);
+      }
+      .l {
+        stroke: var(--mut);
+        stroke-width: 2;
+        fill: none;
+      }
+      .st {
+        stroke: var(--mut);
+        stroke-width: 5;
+        stroke-linecap: round;
+        fill: none;
+      }
+      .ph {
+        position: relative;
+        overflow: hidden;
+      }
+      .ph svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .ph span {
+        position: relative;
+        z-index: 1;
+        background: var(--bg);
+        padding: 2px 8px;
+      }
+      .ph.has svg {
+        display: none;
+      }
+      .ph.has span {
+        background: none;
+      }
+      .hg {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 40px;
+        align-items: center;
+      }
+      .hg h1 {
+        font-size: clamp(52px, 9vw, 120px);
+      }
+      .hi svg {
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+      }
+      .th {
+        width: 56px;
+        height: 56px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: none;
+      }
+      .th .ic {
+        margin: 0;
+      }
+      .mt {
+        width: 100%;
+        height: 60px;
+        margin-bottom: 14px;
+        display: block;
+      }
+      @media (max-width: 760px) {
+        .hg {
+          grid-template-columns: 1fr;
+        }
+        .hi {
+          order: -1;
+          max-width: 260px;
+        }
+      }
+
+      body {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: clamp(44px, 9vw, 112px);
+        max-width: none;
+        line-height: 0.98;
+        margin-bottom: 34px;
+      }
+      .hg {
+        display: block;
+        position: relative;
+      }
+      .hg h1 {
+        font-size: clamp(78px, 20vw, 260px);
+        line-height: 0.86;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 10px;
+      }
+      .hi {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        height: fit-content;
+        width: min(38vw, 420px);
+        max-width: none;
+        z-index: 1;
+      }
+      .hero p,
+      .hg p {
+        font-size: clamp(18px, 2vw, 22px);
+        max-width: 520px;
+        position: relative;
+        z-index: 2;
+      }
+      p.l {
+        font-size: clamp(18px, 2vw, 22px);
+        max-width: 720px;
+      }
+      .lb {
+        font-size: 14px;
+      }
+      nav a {
+        font-size: 15px;
+      }
+      nav b {
+        font-size: 24px;
+      }
+      .btn {
+        font-size: 16px;
+        padding: 16px 38px;
+      }
+      .cols h3,
+      .row h3,
+      .ev h3 {
+        font-size: 30px;
+      }
+      .cols p,
+      .row p {
+        font-size: 17px;
+      }
+      .num {
+        font-size: 68px;
+      }
+      .row b {
+        font-size: 22px;
+      }
+      q {
+        font-size: clamp(30px, 4.6vw, 56px);
+      }
+      .faq summary {
+        font-size: 28px;
+      }
+      .faq p {
+        font-size: 17px;
+      }
+      .pop h2 {
+        font-size: 44px;
+      }
+      @media (max-width: 760px) {
+        .hi {
+          width: 58vw;
+          right: -10vw;
+          opacity: 0.22;
+        }
+        .hg .hi {
+          order: 0;
+        }
+        .cols h3,
+        .row h3,
+        .ev h3 {
+          font-size: 26px;
+        }
+      }
+      .pop {
+        max-width: 420px;
+        padding: 0;
+        border: 3px solid var(--fg);
+        box-shadow: 10px 10px 0 var(--acc);
+        text-align: left;
+        background: var(--bg);
+      }
+      .pop .bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--fg);
+        color: var(--bg);
+        padding: 8px 8px 8px 18px;
+        font: 600 13px Inter;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+      }
+      .pop .x {
+        position: static;
+        width: 34px;
+        height: 34px;
+        border: 2px solid var(--bg);
+        color: var(--bg);
+        font-size: 22px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        cursor: pointer;
+      }
+      .pop .x:hover {
+        background: var(--acc);
+        border-color: var(--acc);
+      }
+      .pop .bd {
+        padding: 28px 26px 30px;
+      }
+      .pop .ring {
+        border: 3px solid var(--fg);
+        border-radius: 0;
+        background: var(--acc);
+        margin: 0 0 20px;
+        box-shadow: 4px 4px 0 var(--fg);
+      }
+      .pop .ring .ic {
+        stroke: var(--bg);
+      }
+      .pop h2 {
+        font-size: clamp(38px, 10vw, 56px);
+        text-transform: uppercase;
+        font-style: italic;
+        line-height: 0.92;
+        margin: 0 0 14px;
+      }
+      .pop p {
+        font-size: 16px;
+        color: var(--fg);
+        opacity: 0.8;
+        margin-bottom: 18px;
+      }
+      .pop .pr {
+        font:
+          400 30px "DM Serif Display",
+          serif;
+        color: var(--acc);
+        margin-bottom: 18px;
+      }
+      .pop .btn {
+        border: 3px solid var(--fg);
+        box-shadow: 5px 5px 0 var(--fg);
+        width: 100%;
+        text-align: center;
+        transition: 0.15s;
+      }
+      .pop .btn:hover {
+        transform: translate(3px, 3px);
+        box-shadow: 2px 2px 0 var(--fg);
+      }
+      .stk {
+        position: absolute;
+        right: -12px;
+        top: -20px;
+        z-index: 2;
+        background: var(--acc);
+        color: var(--bg);
+        border: 3px solid var(--fg);
+        padding: 4px 12px;
+        font: 600 13px Inter;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        transform: rotate(6deg);
+      }
+      .row {
+        cursor: pointer;
+        border: 3px solid var(--fg);
+        box-shadow: 6px 6px 0 var(--line);
+        padding: 18px;
+        margin-bottom: 20px;
+        transition: 0.15s;
+        border-bottom-width: 3px;
+      }
+      .row:hover,
+      .row:focus-visible {
+        transform: translate(-3px, -3px);
+        box-shadow: 9px 9px 0 var(--acc);
+      }
+      .row:hover h3 {
+        color: var(--acc);
+      }
+      .fab {
+        position: fixed;
+        right: max(16px, env(safe-area-inset-right, 0px));
+        bottom: max(16px, env(safe-area-inset-bottom, 0px));
+        z-index: 15;
+        display: flex;
+        align-items: center;
+        background: var(--acc);
+        color: var(--bg);
+        border: 3px solid var(--fg);
+        box-shadow: 5px 5px 0 var(--fg);
+        padding: 10px 18px;
+        font: 600 14px Inter;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.15s;
+      }
+      .fab .ic {
+        stroke: var(--bg);
+        margin-right: 8px;
+      }
+      .fab:hover {
+        transform: translate(3px, 3px);
+        box-shadow: 2px 2px 0 var(--fg);
+      }
+    </style>
+  </head>
+  <body class="lock">
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <symbol id="cup" viewBox="0 0 24 24">
+          <path
+            d="M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10h2a2.5 2.5 0 0 1 0 5h-2M8 3v2M12 3v2"
+          />
+        </symbol>
+        <symbol id="bean" viewBox="0 0 24 24">
+          <ellipse cx="12" cy="12" rx="6" ry="9" transform="rotate(35 12 12)" />
+          <path d="M8 17c4-2 4-8 8-10" />
+        </symbol>
+        <symbol id="flame" viewBox="0 0 24 24">
+          <path
+            d="M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9z"
+          />
+        </symbol>
+        <symbol id="leaf" viewBox="0 0 24 24">
+          <path d="M5 19c0-8 5-13 14-14 0 9-5 14-14 14zM5 19l7-7" />
+        </symbol>
+        <symbol id="wifi" viewBox="0 0 24 24">
+          <path
+            d="M3 9a14 14 0 0 1 18 0M6 12.5a9 9 0 0 1 12 0M9 16a4.5 4.5 0 0 1 6 0"
+          />
+          <circle cx="12" cy="19" r="1" />
+        </symbol>
+        <symbol id="music" viewBox="0 0 24 24">
+          <path d="M9 18V6l10-2v12" />
+          <circle cx="6.5" cy="18" r="2.5" />
+          <circle cx="16.5" cy="16" r="2.5" />
+        </symbol>
+        <symbol id="drip" viewBox="0 0 24 24">
+          <path d="M5 4h14l-4 9H9zM9 13v3h6v-3M8 20h8" />
+        </symbol>
+        <symbol id="book" viewBox="0 0 24 24">
+          <path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 19V5M8 7h7" />
+        </symbol>
+        <symbol id="cookie" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <circle cx="9" cy="9" r=".8" />
+          <circle cx="15" cy="10" r=".8" />
+          <circle cx="10" cy="15" r=".8" />
+          <circle cx="15" cy="15" r=".8" />
+        </symbol>
+        <symbol id="pin" viewBox="0 0 24 24">
+          <path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z" />
+          <circle cx="12" cy="10" r="2.5" />
+        </symbol>
+        <symbol id="clock" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 7v5l3 2" />
+        </symbol>
+        <symbol id="gift" viewBox="0 0 24 24">
+          <path
+            d="M4 10h16v10H4zM3 7h18v3H3zM12 7v13M12 7c-3 0-5-1-4-3s4 0 4 3c0-3 3-5 4-3s-1 3-4 3"
+          />
+        </symbol>
+      </defs>
+    </svg>
+    <div id="ld" aria-label="Memuat">
+      <svg class="lg" viewBox="0 0 24 24">
+        <path
+          class="dr"
+          pathLength="1"
+          d="M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM16 10h2a2.5 2.5 0 0 1 0 5h-2"
+        />
+        <path class="dr" pathLength="1" d="M8 3v2M12 3v2" /></svg
+      ><b>Kopi Sudut</b><span id="pc">0</span>
+    </div>
+    <nav>
+      <b
+        ><svg class="ic n"><use href="#cup" /></svg>Kopi Sudut</b
+      >
+      <div>
+        <a href="#tentang">Tentang</a><a href="#nilai">Nilai</a
+        ><a href="#menu">Menu</a><a href="#biji">Biji</a
+        ><a href="#suasana">Suasana</a><a href="#acara">Acara</a
+        ><a href="#ulasan">Ulasan</a><a href="#faq">FAQ</a
+        ><a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+    <header class="hero">
+      <div class="w hg">
+        <div>
+          <span class="lb">Café &amp; Roastery · Jakarta</span>
+          <h1>Kopi<br />Sudut</h1>
+          <p>Seduh pelan, nikmati lama. Tempat tenang di pojok kota.</p>
+          <a class="btn f" href="#menu">Lihat menu</a>
+        </div>
+        <div class="hi">
+          <svg
+            viewBox="0 0 300 300"
+            role="img"
+            aria-label="Ilustrasi secangkir kopi"
+          >
+            <circle class="a3" cx="150" cy="150" r="135" />
+            <ellipse class="a2" cx="150" cy="220" rx="100" ry="14" />
+            <path
+              class="a1"
+              d="M80 130h140v50a50 50 0 0 1-50 50h-40a50 50 0 0 1-50-50z"
+            />
+            <path
+              d="M220 145h14a22 22 0 0 1 0 44h-18"
+              fill="none"
+              stroke="var(--acc)"
+              stroke-width="14"
+              stroke-linecap="round"
+            />
+            <ellipse class="a2" cx="150" cy="130" rx="70" ry="10" />
+            <path
+              class="st"
+              d="M120 105c-12-14 12-22 0-38M150 105c-12-14 12-22 0-38M180 105c-12-14 12-22 0-38"
+            />
+            <g class="a2">
+              <ellipse
+                cx="45"
+                cy="70"
+                rx="9"
+                ry="14"
+                transform="rotate(35 45 70)"
+              />
+              <ellipse
+                cx="255"
+                cy="85"
+                rx="9"
+                ry="14"
+                transform="rotate(-30 255 85)"
+              />
+              <ellipse
+                cx="238"
+                cy="250"
+                rx="9"
+                ry="14"
+                transform="rotate(50 238 250)"
+              />
+              <ellipse
+                cx="55"
+                cy="240"
+                rx="9"
+                ry="14"
+                transform="rotate(-40 55 240)"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <section id="tentang">
+      <div class="w">
+        <span class="lb">01 — Tentang</span>
+        <h2>Berawal dari satu meja kecil di pojok jalan.</h2>
+        <p class="l">
+          Kini kami menyajikan kopi single origin nusantara, kue buatan sendiri,
+          dan ruang untuk bekerja, berbincang, atau sekadar diam.
+        </p>
+        <div class="cols">
+          <div>
+            <div class="num">12+</div>
+            <p>Jenis biji kopi</p>
+          </div>
+          <div>
+            <div class="num">5K+</div>
+            <p>Cangkir setiap bulan</p>
+          </div>
+          <div>
+            <div class="num">2019</div>
+            <p>Mulai menyeduh</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="nilai">
+      <div class="w">
+        <span class="lb">02 — Nilai Kami</span>
+        <h2>Sederhana, tapi dikerjakan sungguh-sungguh.</h2>
+        <div class="cols">
+          <div>
+            <svg class="ic"><use href="#bean" /></svg>
+            <h3>Biji pilihan</h3>
+            <p>Langsung dari petani lokal dengan harga yang adil.</p>
+          </div>
+          <div>
+            <svg class="ic"><use href="#flame" /></svg>
+            <h3>Sangrai sendiri</h3>
+            <p>Disangrai kecil-kecilan setiap minggu agar tetap segar.</p>
+          </div>
+          <div>
+            <svg class="ic"><use href="#wifi" /></svg>
+            <h3>Ruang tenang</h3>
+            <p>Musik lembut, Wi-Fi cepat, colokan di setiap meja.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menu">
+      <div class="w">
+        <span class="lb">03 — Menu</span>
+        <h2>Pilihan harian kami.</h2>
+        <div class="tabs" id="tabs">
+          <button class="on" data-c="kopi">Kopi</button
+          ><button data-c="non">Non-kopi</button
+          ><button data-c="snack">Camilan</button>
+        </div>
+        <div id="list"></div>
+      </div>
+    </section>
+    <section id="biji">
+      <div class="w">
+        <span class="lb">04 — Asal Biji</span>
+        <h2>Empat daerah, empat karakter.</h2>
+        <div class="cols">
+          <div>
+            <svg class="mt" viewBox="0 0 120 50" aria-hidden="true">
+              <path class="a3" d="M0 50L30 15l20 25 25-35 45 45z" />
+              <path class="a1" d="M0 50L40 28l25 22z" opacity=".7" />
+            </svg>
+            <h3>Gayo</h3>
+            <p>Aceh · Floral, manis lembut, body ringan.</p>
+          </div>
+          <div>
+            <svg class="mt" viewBox="0 0 120 50" aria-hidden="true">
+              <path class="a3" d="M0 50L30 15l20 25 25-35 45 45z" />
+              <path class="a1" d="M0 50L40 28l25 22z" opacity=".7" />
+            </svg>
+            <h3>Toraja</h3>
+            <p>Sulawesi · Earthy, cokelat, rempah.</p>
+          </div>
+          <div>
+            <svg class="mt" viewBox="0 0 120 50" aria-hidden="true">
+              <path class="a3" d="M0 50L30 15l20 25 25-35 45 45z" />
+              <path class="a1" d="M0 50L40 28l25 22z" opacity=".7" />
+            </svg>
+            <h3>Flores Bajawa</h3>
+            <p>NTT · Karamel, kacang, seimbang.</p>
+          </div>
+          <div>
+            <svg class="mt" viewBox="0 0 120 50" aria-hidden="true">
+              <path class="a3" d="M0 50L30 15l20 25 25-35 45 45z" />
+              <path class="a1" d="M0 50L40 28l25 22z" opacity=".7" />
+            </svg>
+            <h3>Kintamani</h3>
+            <p>Bali · Citrus, segar, asam cerah.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="suasana">
+      <div class="w">
+        <span class="lb">05 — Suasana</span>
+        <h2>Ruang untuk berhenti sejenak.</h2>
+        <div class="gal">
+          <div class="ph">
+            <svg
+              viewBox="0 0 200 250"
+              preserveAspectRatio="xMidYMid slice"
+              aria-hidden="true"
+            >
+              <path class="l" d="M60 0v50M140 0v38" />
+              <path class="a1" d="M45 50h30l-6-14H51zM125 38h30l-6-14h-18z" />
+              <rect class="a3" x="20" y="88" width="160" height="5" />
+              <rect class="a4" x="34" y="72" width="14" height="16" rx="3" />
+              <rect class="a4" x="58" y="72" width="14" height="16" rx="3" />
+              <rect class="a1" x="82" y="72" width="14" height="16" rx="3" />
+              <rect class="a4" x="106" y="72" width="14" height="16" rx="3" />
+              <rect class="a2" x="50" y="120" width="100" height="50" />
+              <rect class="a4" x="44" y="112" width="112" height="10" />
+              <rect class="a1" x="66" y="140" width="10" height="22" />
+              <rect class="a1" x="124" y="140" width="10" height="22" />
+              <rect class="a2" x="10" y="170" width="180" height="80" />
+              <rect class="a3" x="10" y="170" width="180" height="6" /></svg
+            ><span>Bar kopi</span>
+          </div>
+          <div class="ph">
+            <svg
+              viewBox="0 0 200 250"
+              preserveAspectRatio="xMidYMid slice"
+              aria-hidden="true"
+            >
+              <rect class="a3" x="15" y="20" width="170" height="5" />
+              <rect class="a1" x="24" y="2" width="8" height="18" />
+              <rect class="a4" x="34" y="6" width="8" height="14" />
+              <rect class="a2" x="44" y="3" width="10" height="17" />
+              <rect class="a1" x="58" y="7" width="8" height="13" />
+              <rect class="a3" x="15" y="62" width="170" height="5" />
+              <rect class="a4" x="30" y="42" width="9" height="20" />
+              <rect class="a1" x="41" y="46" width="9" height="16" />
+              <rect class="a2" x="52" y="43" width="9" height="19" />
+              <rect class="a1" x="45" y="150" width="90" height="60" rx="18" />
+              <rect class="a1" x="30" y="170" width="25" height="45" rx="10" />
+              <rect class="a1" x="125" y="170" width="25" height="45" rx="10" />
+              <path class="l" d="M55 215v25M125 215v25M165 110v130" />
+              <path class="a2" d="M152 110h26l-5-22h-16z" />
+              <rect class="a4" x="15" y="215" width="22" height="25" />
+              <path
+                class="a1"
+                d="M26 215c-14-20-4-35 0-40 4 5 14 20 0 40z"
+              /></svg
+            ><span>Sudut baca</span>
+          </div>
+          <div class="ph">
+            <svg
+              viewBox="0 0 200 250"
+              preserveAspectRatio="xMidYMid slice"
+              aria-hidden="true"
+            >
+              <path class="l" d="M0 20q50 30 100 0t100 0" />
+              <circle class="a1" cx="25" cy="30" r="4" />
+              <circle class="a1" cx="75" cy="30" r="4" />
+              <circle class="a1" cx="125" cy="12" r="4" />
+              <circle class="a1" cx="175" cy="12" r="4" />
+              <path class="a1" d="M20 100a80 50 0 0 1 160 0z" />
+              <path class="l" d="M100 100v135M100 178v55" />
+              <rect class="a2" x="60" y="170" width="80" height="8" />
+              <rect class="a1" x="90" y="154" width="14" height="16" rx="3" />
+              <rect class="a4" x="25" y="195" width="28" height="6" />
+              <rect class="a4" x="147" y="195" width="28" height="6" />
+              <path
+                class="l"
+                d="M30 201v35M48 201v35M152 201v35M170 201v35"
+              /></svg
+            ><span>Teras</span>
+          </div>
+          <div class="ph">
+            <svg
+              viewBox="0 0 200 250"
+              preserveAspectRatio="xMidYMid slice"
+              aria-hidden="true"
+            >
+              <path class="a2" d="M70 40h60l-15 30H85z" />
+              <circle class="a4" cx="100" cy="130" r="55" />
+              <circle class="a3" cx="100" cy="130" r="38" />
+              <circle class="a1" cx="100" cy="130" r="14" />
+              <rect class="a2" x="50" y="185" width="100" height="10" />
+              <path class="l" d="M68 195v45M132 195v45" />
+              <path class="a1" d="M8 240l4-40h30l4 40z" />
+              <path class="a3" d="M156 240l4-30h30l4 30z" />
+              <ellipse class="a2" cx="170" cy="232" rx="6" ry="4" /></svg
+            ><span>Roastery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="acara">
+      <div class="w">
+        <span class="lb">06 — Acara</span>
+        <h2>Setiap pekan ada yang baru.</h2>
+        <div class="ev">
+          <svg class="ic m"><use href="#music" /></svg>
+          <div>
+            <h3>Live Akustik</h3>
+            <small>Jumat · 19.00 – 21.30</small>
+          </div>
+        </div>
+        <div class="ev">
+          <svg class="ic m"><use href="#drip" /></svg>
+          <div>
+            <h3>Kelas Seduh Manual</h3>
+            <small>Sabtu · 10.00 – 12.00</small>
+          </div>
+        </div>
+        <div class="ev">
+          <svg class="ic m"><use href="#book" /></svg>
+          <div>
+            <h3>Komunitas Buku</h3>
+            <small>Minggu · 15.00 – 17.00</small>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ulasan">
+      <div class="w q">
+        <span class="lb">07 — Ulasan</span
+        ><q>Tempat favorit untuk menulis. Kopinya jujur, suasananya tenang.</q
+        ><span>Nadia, pelanggan tetap</span>
+      </div>
+    </section>
+    <section id="faq">
+      <div class="w faq">
+        <span class="lb">08 — Tanya Jawab</span>
+        <h2>Pertanyaan umum.</h2>
+        <details>
+          <summary>Apakah bisa reservasi?</summary>
+          <p>Bisa, untuk grup 4 orang atau lebih melalui formulir di bawah.</p>
+        </details>
+        <details>
+          <summary>Apakah ada pilihan vegan?</summary>
+          <p>Ada susu oat dan almond untuk semua minuman.</p>
+        </details>
+        <details>
+          <summary>Boleh bekerja lama di sini?</summary>
+          <p>Tentu. Wi-Fi gratis dan colokan tersedia.</p>
+        </details>
+      </div>
+    </section>
+    <section id="kontak">
+      <div class="w">
+        <span class="lb">09 — Kontak</span>
+        <h2>Mampir, atau reservasi meja.</h2>
+        <div class="l">
+          <div class="ct">
+            <svg class="ic s"><use href="#pin" /></svg>Jl. Contoh Raya No. 7,
+            Jakarta
+          </div>
+          <div class="ct">
+            <svg class="ic s"><use href="#clock" /></svg>Setiap hari 08.00 –
+            23.00
+          </div>
+        </div>
+        <div class="f1">
+          <input placeholder="Nama" aria-label="Nama" /><input
+            placeholder="Tanggal &amp; jam"
+            aria-label="Tanggal"
+          /><select aria-label="Jumlah">
+            <option>2 orang</option>
+            <option>4 orang</option>
+            <option>6+ orang</option>
+          </select>
+        </div>
+        <p style="margin-top: 30px">
+          <button class="btn f" id="rsv" type="button">Kirim reservasi</button>
+        </p>
+        <p id="ok" role="status"></p>
+      </div>
+    </section>
+    <footer>
+      <div class="w">
+        <span>© 2026 Kopi Sudut Café</span><span>Instagram · WhatsApp</span>
+      </div>
+    </footer>
+    <button class="fab" id="fab" type="button">
+      <svg class="ic s"><use href="#gift" /></svg>Promo
+    </button>
+    <div class="ov" id="ov" role="dialog" aria-modal="true" aria-label="Detail">
+      <div class="pop">
+        <div class="stk" id="sk">PROMO</div>
+        <div class="bar">
+          <span id="pt">Promo hari ini</span
+          ><button class="x" id="x" aria-label="Tutup">×</button>
+        </div>
+        <div class="bd">
+          <div class="ring">
+            <svg class="ic"><use id="pu" href="#gift" /></svg>
+          </div>
+          <h2 id="pn"></h2>
+          <p id="pd"></p>
+          <div class="pr" id="pp"></div>
+          <button class="btn f" id="go"></button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+      const M = [
+        ["Kopi Susu Sudut", "Espresso, susu segar, gula aren", 22, "kopi"],
+        ["V60 Gayo", "Floral, bersih, manis lembut", 28, "kopi"],
+        ["Americano Es", "Segar dan tegas", 20, "kopi"],
+        ["Matcha Latte", "Matcha premium, susu oat", 26, "non"],
+        ["Cokelat Panas", "Pekat dengan krim lembut", 24, "non"],
+        ["Croissant Butter", "Hangat dari oven", 25, "snack"],
+        ["Pisang Goreng Keju", "Renyah, cokelat, keju", 18, "snack"],
+      ];
+      const I = { kopi: "cup", non: "leaf", snack: "cookie" };
+      const G = !!window.gsap,
+        rm = matchMedia("(prefers-reduced-motion: reduce)").matches,
+        A = G && !rm;
+      const IMG = ["", "", "", ""]; // urutan: Bar kopi, Sudut baca, Teras, Roastery. Isi dengan URL atau path foto
+      document.querySelectorAll(".ph").forEach((p, i) => {
+        if (IMG[i]) {
+          p.style.backgroundImage = `url("${IMG[i]}")`;
+          p.classList.add("has");
+        }
+      });
+      const L = document.getElementById("list");
+      function draw(c) {
+        L.innerHTML = M.filter((m) => m[3] === c)
+          .map(
+            (m) =>
+              `<div class="row" tabindex="0" role="button" data-i="${M.indexOf(m)}"><div class="th"><svg class="ic"><use href="#${I[c]}"/></svg></div><div style="flex:1"><h3>${m[0]}</h3><p>${m[1]}</p></div><b>Rp ${m[2]}.000</b></div>`,
+          )
+          .join("");
+        if (A)
+          gsap.from("#list .row", {
+            y: 20,
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.07,
+            ease: "power2.out",
+          });
+      }
+      draw("kopi");
+      document.getElementById("tabs").addEventListener("click", (e) => {
+        const b = e.target.closest("button");
+        if (!b) return;
+        document
+          .querySelectorAll("#tabs button")
+          .forEach((x) => x.classList.remove("on"));
+        b.classList.add("on");
+        draw(b.dataset.c);
+      });
+      const ov = document.getElementById("ov");
+      const openPop = () => {
+        ov.classList.add("open");
+        if (A)
+          gsap.fromTo(
+            ".pop",
+            { y: 30, scale: 0.94, opacity: 0 },
+            {
+              y: 0,
+              scale: 1,
+              opacity: 1,
+              duration: 0.55,
+              ease: "back.out(1.6)",
+            },
+          );
+      };
+      const g = (id) => document.getElementById(id);
+      function card(o) {
+        g("pt").textContent = o.t;
+        g("pu").setAttribute("href", "#" + o.i);
+        g("sk").textContent = o.s;
+        g("pn").textContent = o.h;
+        g("pd").textContent = o.d;
+        g("pp").textContent = o.p || "";
+        g("pp").style.display = o.p ? "block" : "none";
+        g("go").textContent = o.b;
+        g("go").onclick = o.f;
+        openPop();
+      }
+      const PROMO = {
+        t: "Promo hari ini",
+        i: "gift",
+        s: "Promo",
+        h: "Beli 1, gratis 1",
+        d: "Semua kopi susu, Rabu–Jumat pukul 14.00–17.00.",
+        b: "Ambil promo",
+        f: () => {
+          close();
+          location.hash = "menu";
+        },
+      };
+      const CAT = { kopi: "Kopi", non: "Non-kopi", snack: "Camilan" };
+      g("fab").onclick = () => card(PROMO);
+      L.addEventListener("click", (e) => {
+        const r = e.target.closest(".row");
+        if (!r) return;
+        const m = M[+r.dataset.i];
+        card({
+          t: "Menu · " + CAT[m[3]],
+          i: I[m[3]],
+          s: "Favorit",
+          h: m[0],
+          d: m[1] + ". Dibuat segar setiap hari di dapur kami.",
+          p: "Rp " + m[2] + ".000",
+          b: "Pesan di kafe",
+          f: () => {
+            close();
+            location.hash = "kontak";
+          },
+        });
+      });
+      L.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && e.target.classList.contains("row"))
+          e.target.click();
+      });
+      const close = () => {
+        ov.classList.remove("open");
+      };
+      document.getElementById("x").onclick = close;
+      ov.addEventListener("click", (e) => {
+        if (e.target === ov) close();
+      });
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") close();
+      });
+      document.getElementById("rsv").onclick = () => {
+        const f = document.querySelectorAll(".f1 input"),
+          ok = document.getElementById("ok");
+        if (!f[0].value.trim() || !f[1].value.trim()) {
+          ok.textContent = "Mohon isi nama dan tanggal.";
+          return;
+        }
+        ok.textContent =
+          "Terima kasih, " +
+          f[0].value.trim() +
+          ". Kami akan segera menghubungi Anda.";
+        if (A) gsap.from(ok, { y: 10, opacity: 0, duration: 0.5 });
+      };
+      const ld = document.getElementById("ld"),
+        pc = document.getElementById("pc");
+      function done() {
+        ld.remove();
+        document.body.classList.remove("lock");
+        setTimeout(() => card(PROMO), 700);
+      }
+      if (!A) {
+        setTimeout(done, 300);
+      } else {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".hi svg", {
+          y: -10,
+          repeat: -1,
+          yoyo: true,
+          duration: 2.6,
+          ease: "sine.inOut",
+        });
+        const o = { v: 0 };
+        gsap
+          .timeline()
+          .to(
+            o,
+            {
+              v: 100,
+              duration: 1.9,
+              ease: "power1.inOut",
+              onUpdate: () => (pc.textContent = Math.round(o.v)),
+            },
+            0,
+          )
+          .to(
+            "#ld .dr",
+            {
+              strokeDashoffset: 0,
+              duration: 1.6,
+              stagger: 0.2,
+              ease: "power2.inOut",
+            },
+            0,
+          )
+          .to(
+            "#ld",
+            { yPercent: -100, duration: 0.8, ease: "power4.inOut" },
+            "+=.2",
+          )
+          .from(
+            ".hero .lb,.hero h1,.hero p,.hero .btn,.hi",
+            {
+              y: 60,
+              opacity: 0,
+              duration: 0.9,
+              stagger: 0.12,
+              ease: "power3.out",
+            },
+            "-=.35",
+          )
+          .add(done, "-=.2");
+        gsap.utils
+          .toArray("section")
+          .forEach((sc) =>
+            gsap.from(
+              sc.querySelectorAll(
+                ".lb,h2,.l,.cols>div,.tabs,.ev,.ph,details,q,.f1,.btn",
+              ),
+              {
+                y: 40,
+                opacity: 0,
+                duration: 0.9,
+                stagger: 0.1,
+                ease: "power3.out",
+                scrollTrigger: { trigger: sc, start: "top 78%" },
+              },
+            ),
+          );
+      }
+    </script>
+  </body>
 </html>
